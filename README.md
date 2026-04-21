@@ -2,6 +2,15 @@
 
 Routines for evaluating approximate covariance matrices of Green's functions, designed for uncertainty quantification in Bayesian inversions of earthquake sources (ready for high-performance computing).
 
+<a href="#cite"><img src="https://img.shields.io/badge/CITE%20AS-grey?style=flat" alt="Cite As"></a>
+[![PAPER](https://img.shields.io/badge/PAPER-10.1093%2Fgji%2Fggw320-%23007EC6?style=flat)](https://doi.org/10.1093/gji/ggw320)
+[![SOFTWARE](https://img.shields.io/badge/SOFTWARE-10.5281%2Fzenodo.19343279-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19343279)
+
+![Fortran](https://img.shields.io/badge/Fortran-%23734f96?style=flat&logo=fortran&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%233776AB?style=flat&logo=python&logoColor=white)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-brightgreen?style=flat&labelColor=%233776AB)](https://www.python.org/dev/peps/pep-0008/)
+![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
+
 ---
 
 This repository provides a Fortran90 and MATLAB routines for evaluation of the 
@@ -23,8 +32,6 @@ functions uncertainty for waveform-based earthquake source inversions,
 Geophysical Journal International, 207, 1012-1029. [https://doi.org/10.1093/gji/ggw320](https://doi.org/10.1093/gji/ggw320)
 
 ## 2 TECHNICAL IMPLEMENTATION
-
-[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
 Fortran90, High Performance Computing (HPC), Fourier Transform, Cross-Platform (Windows, Linux, macOS)
 
@@ -116,6 +123,7 @@ and don't remove their names from the code.
 You should have received a copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 
+<a name="cite"></a>
 ## 9 CITE AS
 
 If you use this tools suite, please cite both the original methodology paper (preferred) and the software version as follows:
