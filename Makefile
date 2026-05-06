@@ -29,7 +29,7 @@ TARGET = run_example
 # Path to codes
 SRCDIR = src
 
-# Oject list
+# Object list
 OBJ = $(SRCDIR)/nr.o $(SRCDIR)/approxc.o $(SRCDIR)/example.o
 
 # ----------------------------------------------------------------------
