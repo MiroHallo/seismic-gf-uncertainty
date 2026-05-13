@@ -20,8 +20,17 @@
 # Compiler
 F90 = gfortran
 
+# Compilation mode (debug/release/fast)
+MODE ?= release
+
 # Flags
-FFLAGS = -O2 -fcheck=all
+ifeq ($(MODE), debug)
+    FFLAGS = -O0 -g -Wall -fcheck=all
+else ifeq ($(MODE), release)
+    FFLAGS = -O2
+else ifeq ($(MODE), fast)
+    FFLAGS = -O3 -march=native
+endif
 
 # Program name
 TARGET = run_example
