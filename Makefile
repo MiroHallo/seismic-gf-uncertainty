@@ -11,9 +11,10 @@
 #
 # Usage:
 #    > make            # Compile all binary files
-#    > make clean      # Remove all binary files and modules
+#    > make clean      # Remove all modules
+#    > make distclean  # Remove all modules and binary files
 #    > make run        # Compile all and run the main program
-#    > make clean run  # Remove all, Compile all, and run the program
+#    > make clean run  # Remove modules, compile, and run the program
 #
 # ######################################################################
 
@@ -62,6 +63,11 @@ $(SRCDIR)/example.o: $(SRCDIR)/example.f90 $(SRCDIR)/approxc.o
 # ----------------------------------------------------------------------
 # Clean after compilation
 clean:
+	rm -f $(SRCDIR)/*.o $(SRCDIR)/*.mod
+
+# ----------------------------------------------------------------------
+# Distribution clean
+distclean:
 	rm -f $(SRCDIR)/*.o $(SRCDIR)/*.mod $(TARGET)
 
 # ----------------------------------------------------------------------
@@ -70,4 +76,4 @@ run: $(TARGET)
 	./$(TARGET)
 
 
-.PHONY: clean run
+.PHONY: clean distclean run
