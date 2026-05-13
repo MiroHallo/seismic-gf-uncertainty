@@ -149,7 +149,7 @@ SUBROUTINE saxcf(N,f1,f2,L1,L12,T,C)
     complex(8),allocatable:: s1(:),s2(:),Rfg(:),fSACF(:),smooth1(:),smooth12(:)
     real(8),allocatable:: SACF(:),tw(:)
     real(8):: taper,r
-    integer:: i,j,FFT
+    integer:: i,FFT
 
     ! Check the length of smoothing window L1
     if(L1<2)then
