@@ -91,6 +91,11 @@ MATLAB:
 1. Open MATLAB
 2. Run the main script: `example.m` to compute and visualize results
 
+### Server Execution
+If you run scripts on a server without a graphical user interface (e.g., Linux cluster, Docker container, or cloud instance):
+* **Python:** Set `export MPLBACKEND=Agg` (Linux)  or `$env:MPLBACKEND="Agg"` (Windows) before execution
+* **MATLAB:** Run with `matlab -nodisplay -nosplash -nodesktop -r "run('example.m'); exit;"`
+
 ## 7 EXAMPLE OUTPUT
 
 This repository provides Fortran 90 and MATLAB routines for evaluating covariance matrices of Green's functions. The included example codes are for illustrative purposes; for full functionality, users should integrate these subroutines into their own projects. These covariance matrices should be implemented within a Bayesian inversion framework to properly account for uncertainty. Below are figures from a test using simple synthetic waveforms, showing the covariance matrices ACF, AXCF, SACF, and SAXCF.
