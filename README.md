@@ -81,13 +81,13 @@ make
   
 ## 6 USAGE
 
-Fortran:
+### Fortran
 1. Compile Fortran codes by using `Makefile`
 2. Run the program: `run_example` in the project root directory
 3. Run the Python script: `run_example_plot.py` to visualize results from Fortran
 4. Check for high-resolution output figure `example_Fortran.png`
 
-MATLAB:
+### MATLAB
 1. Open MATLAB
 2. Run the main script: `example.m` to compute and visualize results
 
